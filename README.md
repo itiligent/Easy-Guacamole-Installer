@@ -2,7 +2,7 @@
 
 # 🥑 Easy Guacamole Installer
 
-## For 1.6.0 release candidate install instructions see https://github.com/itiligent/Easy-Guacamole-Installer/issues/78
+
 
 </div>
 
@@ -11,6 +11,8 @@
   <img src="https://github.com/itiligent/Guacamole-Install/raw/main/.github/ISSUE_TEMPLATE/paypal-donate-button.png" width="125" />
 </a>
 </p>
+
+## For 1.6.0 release candidate install instructions see https://github.com/itiligent/Easy-Guacamole-Installer/issues/78
 
 ## Introduction
 
