@@ -87,7 +87,7 @@ GUAC_VERSION="1.6.0"
 GUAC_SOURCE_LINK="http://apache.org/dyn/closer.cgi?action=download&filename=guacamole/${GUAC_VERSION}"
 
 # MySQL Connector/J version to install
-MYSQLJCON="9.3.0 "
+MYSQLJCON="9.3.0"
 MYSQLJCON_SOURCE_LINK="https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-j-${MYSQLJCON}.tar.gz"
 
 # Provide a specific MySQL version e.g. 11.1.2 or leave blank "" to use distro default MySQL packages.
@@ -570,12 +570,12 @@ fi
 
 # Prompt to redirect http://root:8080 to http://root:8080/guacamole if not installing reverse proxy
 if [[ -z ${GUAC_URL_REDIR} ]] && [[ "${INSTALL_NGINX}" = false ]]; then
-    echo -e -n "FRONT END: Redirect Guacamole http://domain.root:8080 to /guacamole [y/n]? [default y]: "
+    echo -e -n "FRONT END: Redirect http://domain.root:8080 to /guacamole (Warning: redirect may break DUO) [y/n]? [default n]: "
     read PROMPT
-    if [[ ${PROMPT} =~ ^[Nn]$ ]]; then
-        GUAC_URL_REDIR=false
-    else
+    if [[ ${PROMPT} =~ ^[Yy]$ ]]; then
         GUAC_URL_REDIR=true
+    else
+        GUAC_URL_REDIR=false
     fi
 fi
 
