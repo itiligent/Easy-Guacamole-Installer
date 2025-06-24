@@ -50,10 +50,10 @@ mkdir -p $DOWNLOAD_DIR
 chown -R $SUDO_USER:root $DOWNLOAD_DIR
 
 # Version of Guacamole to upgrade to. See https://guacamole.apache.org/releases/ for latest version info.
-NEW_GUAC_VERSION="1.5.5"
+NEW_GUAC_VERSION="1.6.0"
 
 # MySQL Connector/J version. See https://dev.mysql.com/downloads/connector/j/ for latest version number.
-NEW_MYSQLJCON="9.1.0"
+NEW_MYSQLJCON="9.3.0"
 
 # Get the currently installed Tomcat version.
 TOMCAT_VERSION=$(ls /etc/ | grep tomcat)
