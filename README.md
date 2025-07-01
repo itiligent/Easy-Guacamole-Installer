@@ -12,7 +12,7 @@
 </a>
 </p>
 
-## For v1.6.0 installer notes and issues see https://github.com/itiligent/Easy-Guacamole-Installer/issues/78
+### v1.6.0 installer and upgrade script is working. User install & upgrade notes tracked in https://github.com/itiligent/Easy-Guacamole-Installer/issues/78
 
 ## Introduction
 
