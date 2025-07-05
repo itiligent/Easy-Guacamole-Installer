@@ -152,7 +152,7 @@ CRON_DENY_FILE="/etc/cron.deny" # Distro's cron deny file
 
 # Script branding header
 echo
-echo -e "${GREYB}Guacamole ${GUAC_VERSION} Auto Installer."
+echo -e "${GREYB}Guacamole ${GUAC_VERSION} Appliance Auto Installer"
 echo -e "              ${LGREEN}Powered by Itiligent"
 echo
 echo
