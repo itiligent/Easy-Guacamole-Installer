@@ -30,7 +30,7 @@ wget https://raw.githubusercontent.com/itiligent/Guacamole-Install/main/1-setup.
 ## Prerequisites
 
 📋 **You will need:**
-  - **Debian: 11.x & 12.x** | **Ubuntu LTS 24.x & 22.x** | **Raspbian**
+  - **Supported OS: Debian 12 or 13** | **Ubuntu LTS 22.x or 24.x** | **Raspbian**
   - **1 CPU core + 2GB RAM for every 25 users (plus minimum RAM & disk space for your selected OS).**
 - **Open TCP ports: 22, 80, and 443 (no other services using 80, 8080 & 443)**
 - **For both TLS reverse proxy options you will need a PRIVATE DNS record for the internal proxy site, and an additional PUBLIC DNS record for the Let's Encrypt option.**
@@ -139,4 +139,8 @@ wget https://raw.githubusercontent.com/itiligent/Guacamole-Install/main/1-setup.
 - `branding.jar`: Base template for customizing Guacamole's UI theme.
 
 😄🥑
+
+
+
+
 
