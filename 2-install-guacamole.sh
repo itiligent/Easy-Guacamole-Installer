@@ -98,9 +98,9 @@ spinner() {
   printf "       "
   tput rc
 }
-apt-get -qq -y install ${MYSQLPKG} ${TOMCAT_VERSION} ${JPEGTURBO} ${LIBPNG} ufw pwgen expect \
+apt-get -qq -y install ${MYSQLPKG} ${TOMCAT_VERSION} ${JPEGTURBO} ${LIBPNG} ${FREERDP} ufw pwgen expect \
     build-essential libcairo2-dev libtool-bin uuid-dev libavcodec-dev libavformat-dev libavutil-dev \
-    libswscale-dev freerdp3-dev libpango1.0-dev libssh2-1-dev libtelnet-dev libvncserver-dev libwebsockets-dev \
+    libswscale-dev libpango1.0-dev libssh2-1-dev libtelnet-dev libvncserver-dev libwebsockets-dev \
     libpulse-dev libssl-dev libvorbis-dev libwebp-dev ghostscript &>>${INSTALL_LOG} &
 command_pid=$!
 spinner $command_pid

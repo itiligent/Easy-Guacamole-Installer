@@ -145,6 +145,7 @@ RDP_SHARE_HOST=""               # Custom RDP host name shown in Windows Explorer
 RDP_SHARE_LABEL="RDP Share"     # Custom RDP shared drive name in Windows Explorer (eg. "RDP_SHARE_LABEL on RDP_SHARE_HOST" eg. "your RDP share name on server01"
 RDP_PRINTER_LABEL="RDP Printer" # Custom RDP printer name shown in Windows
 CRON_DENY_FILE="/etc/cron.deny" # Distro's cron deny file
+FREERDP="freerdp2-dev"			# Set default FreeRDP package
 
 #######################################################################################################################
 # Download GitHub setup scripts. BEFORE RUNNING SETUP, COMMENT OUT DOWNLOAD LINES OF ANY SCRIPTS YOU HAVE EDITED ! ####
@@ -219,6 +220,10 @@ elif [[ ${ID,,} = "debian" ]] || [[ ${ID,,} = "raspbian" ]]; then
     LIBPNG="libpng-dev"
 fi
 
+#######################################################################################################################
+# Ongoing fixes and workarounds as distros diverge/change #############################################################
+#######################################################################################################################
+
 # Check for the more recent versions of Tomcat currently supported by the distro
 if [[ $(apt-cache show tomcat10 2>/dev/null | egrep "Version: 10" | wc -l) -gt 0 ]]; then
     TOMCAT_VERSION="tomcat10"
@@ -229,9 +234,10 @@ else
     TOMCAT_VERSION="tomcat9"
 fi
 
-#######################################################################################################################
-# Ongoing fixes and workarounds as distros diverge/change #############################################################
-#######################################################################################################################
+# Decide the appropriate FreeRDP package (Debian 13.0 has issues with FreeRDP3) 
+if [[ "${VERSION_CODENAME,,}" == "bookworm" || "${VERSION_CODENAME,,}" == "noble" ]]; then
+    FREERDP="freerdp3-dev"
+fi
 
 # Workaround for Debian incompatibilities with later Tomcat versions. (Adds the oldstable repo and downgrades the Tomcat version)
 if [[ ${ID,,} = "debian" && ${VERSION_CODENAME,,} = *"bookworm"* ]] || [[ ${ID,,} = "debian" && ${VERSION_CODENAME,,} = *"trixie"* ]]; then #(checks for upper and lower case)
@@ -311,7 +317,7 @@ fi
 
 # Ensure SERVER_NAME is consistent with local host entries
 if [[ -z ${SERVER_NAME} ]]; then
-    echo -e "${LYELLOW}Update Linux system HOSTNAME? [Enter to keep: ${HOSTNAME}]${LGREEN}"
+    echo -e "${LYELLOW} Update Linux system HOSTNAME? [Enter to keep: ${HOSTNAME}]${LGREEN}"
     read -p "              Enter Linux hostname : " SERVER_NAME
     # If hit enter making no SERVER_NAME change, assume the existing hostname as current
     if [[ "${SERVER_NAME}" = "" ]]; then
@@ -735,6 +741,7 @@ export GUAC_VERSION=$GUAC_VERSION
 export GUAC_SOURCE_LINK=$GUAC_SOURCE_LINK
 export ID=$ID
 export VERSION_ID=$VERSION_ID
+export FREERDP=$FREERDP
 export VERSION_CODENAME=$VERSION_CODENAME
 export MYSQLJCON=$MYSQLJCON
 export MYSQLJCON_SOURCE_LINK=$MYSQLJCON_SOURCE_LINK
