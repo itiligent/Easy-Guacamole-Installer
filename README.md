@@ -1,5 +1,9 @@
 <div align="center">
 
+![GitHub release version](https://img.shields.io/github/v/release/itiligent/Easy-Guacamole-Installer?style=flat-square&color=orange&labelColor=black)
+![GitHub stars](https://img.shields.io/github/stars/itiligent/Easy-Guacamole-Installer?style=flat-square&color=yellow&labelColor=black)
+![GitHub forks](https://img.shields.io/github/forks/itiligent/Easy-Guacamole-Installer?style=flat-square&color=blue&labelColor=black)
+
 # 🥑 Easy Guacamole Installer
 
 
@@ -12,9 +16,9 @@
 </a>
 </p>
 
-### v1.6.0 installer and upgrade script is working. User install & upgrade notes tracked in https://github.com/itiligent/Easy-Guacamole-Installer/issues/78
-
 ## Introduction
+
+#### v1.6.0 is working. Issues and notes are tracked in https://github.com/itiligent/Easy-Guacamole-Installer/issues/78
 
 This install script automatically sets up a Guacamole jump-host with optional for TLS reverse proxy (self-signed or Let's Encrypt), Active Directory integration, multi-factor authentication, Quick Connect & History Recording Storage UI enhancements. Other options also include a custom UI dark themed template, auto database backups, email alerts and internal hardening options including fail2ban for defence against brute force attacks. There is also faciltiy for enterprise deployments similar to [Amazon's Guacamole Bastion Cluster](http://netcubed-ami.s3-website-us-east-1.amazonaws.com/guaws/v2.3.1/cluster/).
 
@@ -30,7 +34,7 @@ wget https://raw.githubusercontent.com/itiligent/Guacamole-Install/main/1-setup.
 ## Prerequisites
 
 📋 **You will need:**
-  - **Debian: 11.x & 12.x** | **Ubuntu LTS 24.x & 22.x** | **Raspbian**
+  - **Supported OS: Debian 12 or 13** | **Ubuntu LTS 22.x or 24.x** | **Raspbian**
   - **1 CPU core + 2GB RAM for every 25 users (plus minimum RAM & disk space for your selected OS).**
 - **Open TCP ports: 22, 80, and 443 (no other services using 80, 8080 & 443)**
 - **For both TLS reverse proxy options you will need a PRIVATE DNS record for the internal proxy site, and an additional PUBLIC DNS record for the Let's Encrypt option.**
@@ -139,4 +143,12 @@ wget https://raw.githubusercontent.com/itiligent/Guacamole-Install/main/1-setup.
 - `branding.jar`: Base template for customizing Guacamole's UI theme.
 
 😄🥑
+
+
+
+
+
+
+
+
 
