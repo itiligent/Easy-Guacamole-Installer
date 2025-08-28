@@ -1,5 +1,11 @@
 <div align="center">
 
+![GitHub release version](https://img.shields.io/github/v/release/itiligent/Easy-Guacamole-Installer?style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/itiligent/Easy-Guacamole-Installer?style=social)
+![GitHub forks](https://img.shields.io/github/forks/itiligent/Easy-Guacamole-Installer?style=social)
+![GitHub release downloads](https://img.shields.io/github/downloads/itiligent/Easy-Guacamole-Installer/total?style=social)
+
+
 # 🥑 Easy Guacamole Installer
 
 
@@ -139,6 +145,7 @@ wget https://raw.githubusercontent.com/itiligent/Guacamole-Install/main/1-setup.
 - `branding.jar`: Base template for customizing Guacamole's UI theme.
 
 😄🥑
+
 
 
 
