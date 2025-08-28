@@ -1,16 +1,12 @@
 <div align="center">
 
-![GitHub release version](https://img.shields.io/github/v/release/itiligent/Easy-Guacamole-Installer?style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/itiligent/Easy-Guacamole-Installer?style=social)
-![GitHub forks](https://img.shields.io/github/forks/itiligent/Easy-Guacamole-Installer?style=social)
-![GitHub release downloads](https://img.shields.io/github/downloads/itiligent/Easy-Guacamole-Installer/total?style=social)
+![GitHub stars](https://img.shields.io/github/stars/itiligent/Easy-Guacamole-Installer?style=for-the-badge&color=yellow&labelColor=black)
+![GitHub forks](https://img.shields.io/github/forks/itiligent/Easy-Guacamole-Installer?style=for-the-badge&color=blue&labelColor=black)
+![GitHub release downloads](https://img.shields.io/github/downloads/itiligent/Easy-Guacamole-Installer/total?style=for-the-badge&color=green&labelColor=black)
+![GitHub release version](https://img.shields.io/github/v/release/itiligent/Easy-Guacamole-Installer?style=for-the-badge&color=orange&labelColor=black)
 
 
 # 🥑 Easy Guacamole Installer
-
-
-
-</div>
 
 <p align="center">
 <a href="https://www.paypal.com/donate/?business=PSZ878JBJDMB8&amount=10&no_recurring=0&item_name=Thankyou+for+your+support+in+maintaining+this+project&currency_code=AUD">
@@ -18,7 +14,7 @@
 </a>
 </p>
 
-### v1.6.0 installer and upgrade script is working. User install & upgrade notes tracked in https://github.com/itiligent/Easy-Guacamole-Installer/issues/78
+#### v1.6.0 is working. Issues and notes are tracked in https://github.com/itiligent/Easy-Guacamole-Installer/issues/78
 
 ## Introduction
 
@@ -145,6 +141,7 @@ wget https://raw.githubusercontent.com/itiligent/Guacamole-Install/main/1-setup.
 - `branding.jar`: Base template for customizing Guacamole's UI theme.
 
 😄🥑
+
 
 
 
