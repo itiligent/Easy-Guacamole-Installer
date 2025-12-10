@@ -20,7 +20,7 @@
 
 #### v1.6.0 is working. Issues and notes are tracked in https://github.com/itiligent/Easy-Guacamole-Installer/issues/78
 
-This install script automatically sets up a Guacamole jump-host with optional for TLS reverse proxy (self-signed or Let's Encrypt), Active Directory integration, multi-factor authentication, Quick Connect & History Recording Storage UI enhancements. Other options also include a custom UI dark themed template, auto database backups, email alerts and internal hardening options including fail2ban for defence against brute force attacks. There is also faciltiy for enterprise deployments similar to [Amazon's Guacamole Bastion Cluster](http://netcubed-ami.s3-website-us-east-1.amazonaws.com/guaws/v2.3.1/cluster/).
+This install script automatically sets up a Guacamole jump-host with optional for TLS reverse proxy (self-signed or Let's Encrypt), Active Directory integration, multi-factor authentication, Quick Connect & History Recording Storage UI enhancements. Other options also include a custom UI dark themed template, auto database backups, email alerts and internal hardening options including fail2ban for defence against brute force attacks. There is also facility for enterprise deployments similar to [Amazon's Guacamole Bastion Cluster](http://netcubed-ami.s3-website-us-east-1.amazonaws.com/guaws/v2.3.1/cluster/).
 
 ## Automatic Installation
 
@@ -143,6 +143,7 @@ wget https://raw.githubusercontent.com/itiligent/Guacamole-Install/main/1-setup.
 - `branding.jar`: Base template for customizing Guacamole's UI theme.
 
 😄🥑
+
 
 
 
