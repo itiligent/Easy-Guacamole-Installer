@@ -20,11 +20,11 @@
 
 #### v1.6.0 is working. Issues and notes are tracked in https://github.com/itiligent/Easy-Guacamole-Installer/issues/78
 
-This install script automatically sets up a Guacamole jump-host with optional for TLS reverse proxy (self-signed or Let's Encrypt), Active Directory integration, multi-factor authentication, Quick Connect & History Recording Storage UI enhancements. Other options also include a custom UI dark themed template, auto database backups, email alerts and internal hardening options including fail2ban for defence against brute force attacks. There is also facility for enterprise deployments similar to [Amazon's Guacamole Bastion Cluster](http://netcubed-ami.s3-website-us-east-1.amazonaws.com/guaws/v2.3.1/cluster/).
+This install script automatically sets up a Guacamole jump-host with optional for TLS reverse proxy (self-signed or Let's Encrypt), Active Directory integration, multi-factor authentication, Quick Connect & History Recording Storage UI enhancements. Other options also include a custom UI dark themed template, auto database backups, email alerts and internal hardening options including fail2ban for defence against brute force attacks. There is also facility for enterprise deployment similar to [Amazon's Guacamole Bastion Cluster](http://netcubed-ami.s3-website-us-east-1.amazonaws.com/guaws/v2.3.1/cluster/).
 
 ## Automatic Installation
 
-🚀 Paste the below link into a terminal & follow the prompts (**do NOT run as root, the script will prompt for sudo**): 
+🚀 Move to you your home directory, paste the below link, then follow the prompts (**do NOT run as root, the script will prompt for sudo**): 
 
 ```shell
 wget https://raw.githubusercontent.com/itiligent/Guacamole-Install/main/1-setup.sh && chmod +x 1-setup.sh && ./1-setup.sh
@@ -39,7 +39,7 @@ wget https://raw.githubusercontent.com/itiligent/Guacamole-Install/main/1-setup.
 - **Open TCP ports: 22, 80, and 443 (no other services using 80, 8080 & 443)**
 - **For both TLS reverse proxy options you will need a PRIVATE DNS record for the internal proxy site, and an additional PUBLIC DNS record for the Let's Encrypt option.**
 - **Sudo & wget packages installed**
-- **The user running `1-setup.sh` must have sudo permissions**
+- **The user running `1-setup.sh` must have sudo permissions.**
 
 ---
 
@@ -143,6 +143,7 @@ wget https://raw.githubusercontent.com/itiligent/Guacamole-Install/main/1-setup.
 - `branding.jar`: Base template for customizing Guacamole's UI theme.
 
 😄🥑
+
 
 
 
